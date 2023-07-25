@@ -16,7 +16,7 @@ CONFIG_FILE_PATH = os.path.join(ROOT_DIR,CONFIG_PATH,CONFIG_FILE_NAME)
 #ingestion variables
 
 INGESTION_CONFIG_KEY = "data_ingestion_config"
-DATA_DOWNLOAD_URL_key = "data_download_url"
+DATASET_DOWNLOAD_URL_key = "dataset_download_url"
 DATA_INGESTION_ARTIFACT_DIR = "ingested_data"
 RAW_DATA_DIR_KEY = "raw_data_dir"
 INGESTED_TRAIN_DIR_KEY = "ingested_train_dir"

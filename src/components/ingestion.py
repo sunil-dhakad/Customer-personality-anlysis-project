@@ -19,7 +19,7 @@ class DataIngestion:
     def download_data(self):
         try:
         
-            download_url = self.data_ingestion_config.data_download_url
+            download_url = self.data_ingestion_config.dataset_download_url
             raw_data_dir = self.data_ingestion_config.raw_data_dir
             os.makedirs(raw_data_dir, exist_ok=True)
             train_file_name = os.path.basename(download_url)
@@ -54,6 +54,6 @@ class DataIngestion:
             logging.info(f"initiate data ingestion")
             return self.savedata()
         except Exception as e:
-            raise CustomException(e, sys)from e
+            raise CustomException(e,sys)from e
     
     
