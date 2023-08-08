@@ -1,7 +1,9 @@
 pandas
 numpy
-pyaml
-sys
-os
-scikit-learn
--e
+matplotlib
+notebook
+PyYAML
+seaborn
+sklearn
+flask
+-e .

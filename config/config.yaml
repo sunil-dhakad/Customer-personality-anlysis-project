@@ -14,3 +14,32 @@ data_ingestion_config:
 data_validation_config:
  schema_dir: config
  schema_file_name: schema.yaml
+ 
+
+data_transformation_config:
+ transformed_dir: transformed_data
+ transformed_train_dir: train
+ scaled_dir: scaled_df
+ scaled_data_file_name: scaled_df.csv
+ scaled_obj_file_name: scaled.pkl
+ preprocessing_dir: preprocessed_df
+ preprocessing_df_file_name: preprocessing_df.csv
+ preprocessed_obj_file_name_key: preprocessed.pkl
+ pca_data_dir: pca_df
+ pca_data_file_name: pca_df.csv
+ pca_obj_file_name: pca_obj.pkl
+ cluster_dir: clusters
+ cluster_data_file_name: cluster_data.csv
+
+
+model_trainer_config:
+ trained_model_dir: trained_model
+ trained_model_name: model.pkl
+ cluster_data_dir: clustered_data
+ cluster_file: clustered.csv
+ rf_model_dir : rf_model_dir
+ rf_model: rf_model.pkl
+ trained_data_file_name: trained_df
+ trained_obj_file_name: training_objs.pkl
+
+ 

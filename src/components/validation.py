@@ -75,7 +75,7 @@ class Datavalidation:
             raise CustomException(e,sys) from e
 
     def __del__(self):
-    logging.info(f"\n{'*'*20} Data Validation log completed {'*'*20}\n")
+        logging.info(f"\n{'*'*20} Data Validation log completed {'*'*20}\n")
 
 
         
