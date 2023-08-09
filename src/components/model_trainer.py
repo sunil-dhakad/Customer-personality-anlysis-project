@@ -163,32 +163,3 @@ class Model_trainer:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
- '''   def start_clustering_the_dataset(self, dataframe:pd.DataFrame):
-        try:
-            #Initiating the Agglomerative Clustering model 
-            AC = AgglomerativeClustering(n_clusters=4)
-            # fit model and predict clusters
-            yhat_AC = AC.fit_predict(dataframe)
-            dataframe["Clusters"] = yhat_AC
-            #saving cluster data
-            cluster_data_path = self.data_transformation_config.cluster_data_file_path
-            os.makedirs(os.path.dirname(cluster_data_path))
-            dataframe.to_csv(cluster_data_path,header=True, index=False)
-            print(f"clusters dataset saved , there are {dataframe['Clusters'].unique()} clusters in total")
-            logging.info(f"clusters dataset saved , there are {dataframe['Clusters'].unique()} clusters in total")
-        except Exception as e:
-            raise CustomException(e,sys) from e 
-
-'''
