@@ -8,6 +8,8 @@ from dataclasses import dataclass
 from src.entity.config_entity  import DataIngestionConfig
 from src.entity.artifact_entity  import DataIngestionArtifact
 from six.moves import urllib
+from src.config.configuration import Configuration
+from src.constant import *
 
 
 #fetching to local, saving it 

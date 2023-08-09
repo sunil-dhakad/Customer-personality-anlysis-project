@@ -6,7 +6,7 @@ from src.exception import CustomException
 from src.entity.config_entity import *
 from src.utils.utils import read_yaml_file
 from src.entity.config_entity import DataValidationConfig,DataIngestionConfig
-from src.entity.artifact_entity import DataTransformationArtifact
+from src.entity.artifact_entity import DataTransformationArtifact,DataIngestionArtifact
 import pandas as pd
 import numpy as np
 
